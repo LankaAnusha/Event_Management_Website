@@ -1,0 +1,20 @@
+body{
+    margin:0;
+    padding:0;
+    
+}
+.slider{
+    width:100%;
+    height:700px;
+    background:url(https://image.wedmegood.com/resized/450X/uploads/member/732917/1615205080__DSF0054_copy_2.jpg?crop=5,1248,2036,1145);
+    background-position: center;
+  
+    background-size: cover;
+       animation:slide 20s infinite;
+}
+@keyframes slide{
+    25%
+    {background:url(https://image.wedmegood.com/resized/1900X/uploads/city_bg_image/1/delhi_bg.jpeg);}
+    50%
+    {background:url(team3.png);}
+}

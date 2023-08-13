@@ -1,0 +1,1064 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/icons/fontawesome_icons_webapp.asp.css">
+  <script src="script (1).js" defer></script>
+  <style>
+    body {
+      margin: 0;width:100%;
+      padding: 0;overflow-x:hidden;
+    }
+
+    .toppane {
+      width: 100%;
+      height: 40px;
+      background-color: #ff3399;
+      border-collapse: collapse;
+    }
+    .spacepane{
+      width: 100%;
+      height: 20px;
+      background-color: #fff;
+      border-collapse: collapse;
+    }
+    .bottompane{
+      width: 100%;
+      height: 300px;
+      background-color: #ff3399;
+      border-collapse: collapse;
+    }
+    .venuespane {
+      width: 100%;
+      height: 500px;
+      border: 5px solid white;
+      background-color: #f2f2f2;
+      border-collapse: collapse;
+    }
+
+
+    .dropbtn {
+      background-color: white;
+      color: #ff3399;
+      font-size: 18px;
+      padding: 2px;
+      margin-right: 30px;
+      margin-top: 5px;
+      border: none;
+      cursor: pointer;
+      width: 200px;
+    }
+
+    .dropdown {
+      position: absolute;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #f9f9f9;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #ff3399;
+      font-size: 18px;
+      padding: 12px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .p {
+      color: white;
+      padding-top: 20px;
+      padding-left: 5px;
+      font-weight: bold;
+      font-size: 35px;
+    }
+
+    p {
+      color: #404142;
+      font-weight: bold;
+      margin-left: 40px;
+      font-size: 15px;
+      margin-top: 5px;
+    }
+
+    p1 {
+      color: black;
+      margin-left: 40px;
+      font-size: 12px;
+    }
+
+    p2 {
+      color: #404142;
+      margin-left: 40px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .wrapper {
+      margin-top:-20px;
+      position: relative;
+      margin-left: 30px;
+      margin-right:70px;
+    }
+
+    .wrapper i {
+      top: 50%;
+      height: 44px;
+      width: 44px;
+      color: #ff3399;
+      cursor: pointer;
+      font-size: 1.25rem;
+      position: absolute;
+      line-height: 44px;
+      background: #fff;
+      border-radius: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.1s linear;
+    }
+
+    .wrapper i:active {
+      transform: translateY(-50%) scale(0.9);
+    }
+
+    .wrapper i:hover {
+      background: #f2f2f2;
+    }
+
+    .wrapper i:first-child {
+      left: -22px;
+      display: none;
+    }
+
+    .wrapper i:last-child {
+      right: -22px;
+    }
+
+    .wrapper .carousel {
+      cursor: pointer;
+      overflow: hidden;
+      white-space: nowrap;
+      scroll-behavior: smooth;
+    }
+
+    .carousel img {
+      height: 270px;
+      user-select: none;
+      margin-left: 14px;
+      width: 270px;
+    }
+
+    .carousel img:first-child {
+      margin-left: 40px;
+    }
+
+    @media screen and (max-width: 900px) {
+      .carousel img {
+        width: 350px;
+      }
+    }
+
+    @media screen and (max-width: 550px) {
+      .carousel img {
+        width: 100%;
+      }
+    }
+
+    .block {
+      display: inline-block;
+      width: 400px;
+      height: 400px;
+      margin-top: 40px;
+      margin-left: 50px;
+      margin-bottom: 10px;
+      background-color: #f2f2f2;
+    }
+
+    .block img {
+      margin-top: 10px;
+      margin-left: 10px;
+      height: 280px;
+    }
+    .wrapper1 { margin-top:-20px;
+      margin-left: 30px;
+      margin-right:70px;
+      position: relative;
+    }
+
+    .wrapper1 i {
+      top: 50%;
+      height: 44px;
+      width: 44px;
+      color: #ff3399;
+      cursor: pointer;
+      font-size: 1.15rem;
+      position: absolute;
+      line-height: 44px;
+      background: #fff;
+      border-radius: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.1s linear;
+    }
+
+    .wrapper1 i:active {
+      transform: translateY(-50%) scale(0.9);
+    }
+
+    .wrapper1 i:hover {
+      background: #f2f2f2;
+    }
+
+    .wrapper1 i:first-child {
+      left: -22px;
+      display: none;
+    }
+
+    .wrapper1 i:last-child {
+      right: -22px;
+    }
+    .wrapper1 .carousel1 {
+      cursor: pointer;
+      overflow: hidden;
+      white-space: nowrap;
+      scroll-behavior: smooth;
+    }
+
+    .carousel1 img {
+      height: 270px;
+      user-select: none;
+      margin-left: 14px;
+      width: 300px;
+    }
+
+    .carousel1 img:first-child {
+      margin-left: 40px;
+    }
+
+    @media screen and (max-width: 900px) {
+      .carousel1 img {
+        width: 350px;
+      }
+    }
+
+    @media screen and (max-width: 550px) {
+      .carousel1 img {
+        width: 100%;
+      }
+    }
+    .wrapper2 { margin-top:-20px;
+      margin-left: 30px;
+      margin-right:70px;
+      position: relative;
+    }
+
+    .wrapper2 i {
+      top: 50%;
+      height: 44px;
+      width: 44px;
+      color: #ff3399;
+      cursor: pointer;
+      font-size: 1.15rem;
+      position: absolute;
+      line-height: 44px;
+      background: #fff;
+      border-radius: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.1s linear;
+    }
+
+    .wrapper2 i:active {
+      transform: translateY(-50%) scale(0.9);
+    }
+
+    .wrapper2 i:hover {
+      background: #f2f2f2;
+    }
+
+    .wrapper2 i:first-child {
+      left: -22px;
+      display: none;
+    }
+
+    .wrapper2 i:last-child {
+      right: -22px;
+    }
+    .wrapper2 .carousel2 {
+      cursor: pointer;
+      overflow: hidden;
+      white-space: nowrap;
+      scroll-behavior: smooth;
+    }
+
+    .carousel2 img {
+      height: 270px;
+      user-select: none;
+      margin-left: 14px;
+      width: 300px;
+    }
+
+    .carousel2 img:first-child {
+      margin-left: 40px;
+    }
+
+    @media screen and (max-width: 900px) {
+      .carousel2 img {
+        width: 350px;
+      }
+    }
+
+    @media screen and (max-width: 550px) {
+      .carousel2 img {
+        width: 100%;
+      }
+    }.wrapper3 { margin-top:-20px;
+      margin-left: 30px;
+      margin-right:70px;
+      position: relative;
+    }
+
+    .wrapper3 i {
+      top: 50%;
+      height: 44px;
+      width: 44px;
+      color: #ff3399;
+      cursor: pointer;
+      font-size: 1.15rem;
+      position: absolute;
+      line-height: 44px;
+      background: #fff;
+      border-radius: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.1s linear;
+    }
+
+    .wrapper3 i:active {
+      transform: translateY(-50%) scale(0.9);
+    }
+
+    .wrapper3 i:hover {
+      background: #f2f2f2;
+    }
+
+    .wrapper3 i:first-child {
+      left: -22px;
+      display: none;
+    }
+
+    .wrapper3 i:last-child {
+      right: -22px;
+    }
+    .wrapper3 .carousel3 {
+      cursor: pointer;
+      overflow: hidden;
+      white-space: nowrap;
+      scroll-behavior: smooth;
+    }
+
+    .carousel3 img {
+      height: 270px;
+      user-select: none;
+      margin-left: 14px;
+      width: 300px;
+    }
+
+    .carousel3 img:first-child {
+      margin-left: 40px;
+    }
+
+    @media screen and (max-width: 900px) {
+      .carousel3 img {
+        width: 350px;
+      }
+    }
+
+    @media screen and (max-width: 550px) {
+      .carousel3 img {
+        width: 100%;
+      }
+    }
+    .button {
+  background-color: #fff;
+  border: none;
+  color: #ff3399;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;font-weight:bold;
+  margin-left:500px;margin-top:-10px;
+  cursor: pointer;
+}
+  </style>
+</head>
+
+<body>
+  <div class="toppane">
+    <m class="p">
+     Find your Ideal Vendors at Best Prices
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp; <z1 class="dropdown"
+        style="float:right;">
+        <button class="dropbtn">
+          <i class="fa fa-globe"
+            style="font-size:20px"></i>&nbsp;&nbsp;Hyderabad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <i class="fa fa-sort-desc" style="font-size:28px"></i>
+        </button>
+        <z class="dropdown-content">
+          <a href="venues.html">Hyderabad</a>
+          <a href="#">Mumbai</a>
+          <a href="#">Chennai</a>
+        </z>
+      </z1>
+    </m>
+  </div>
+  <div class="venuespane">
+    <z style="color:black;font-size:35px;margin-left:450px;margin-top:20px;">Popular Venues in Hyderabad</z>
+    <div class="wrapper">
+      <i id="left" class="fa-solid fa-angle-left"></i>
+      <div class="carousel">
+        <div class="container">
+          <div class="block">
+            <img
+              src="https://image.wedmegood.com/resized/450X/uploads/member/3633360/1667558120_3.JPG?crop=7,32,1082,608"
+              height="300px">
+            <p>Rainbow
+              Retreat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;4.9 Rating
+            </p>
+            <p1>
+              <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+              &nbsp;Hyderabad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i1 class="fas fa-university" style="color:#868286"></i1>&nbsp;Banquet Halls,Lawns
+            </p1>
+            <br>
+            <br>
+            <br>
+            <br>
+            <p2>Rentals Only</p2>
+          </div>
+          <div class="block">
+            <img
+              src="https://image.wedmegood.com/resized/450X/uploads/vendor_cover_pic/69941/e55f162f-b05f-46c9-a134-2428e153e286.png">
+            <p>Deccan Serai
+              Hotel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;5.0 Rating
+            </p>
+            <p1>
+              <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>&nbsp;Hitech
+              City,Hyderabad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i1 class="fas fa-university"
+                style="color:#868286"></i1>&nbsp;Banquet Halls,Hotels
+            </p1>
+            <br>
+            <br>
+            <p1>
+              Veg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Non
+              Veg</p1>
+            <br>
+            <br>
+            <p2>
+              <i1 class="fa fa-inr" style="color:#868286"></i1>
+              &nbsp;650&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i1 class="fa fa-inr" style="color:#868286"></i1>&nbsp;900
+            </p2>
+          </div>
+          <div class="block">
+            <img
+              src="https://image.wedmegood.com/resized/450X/uploads/member/14059/1594373663_WhatsApp_Image_2020_06_30_at_2.28.58_PM__1_.jpeg?crop=134,195,1013,570">
+            <p>Dream Valley
+              Resorts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;5.0 Rating
+            </p>
+            <p1>
+              <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>&nbsp;Moinabad,Hyderabad&nbsp; <i1
+                class="fas fa-university" style="color:#868286"></i1>&nbsp;Banquet Halls/Farmhouses
+            </p1>
+            <br>
+            <br>
+            <p1>
+              Veg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Non
+              Veg</p1>
+            <br>
+            <br>
+            <p2>
+              <i1 class="fa fa-inr" style="color:#868286"></i1>
+              &nbsp;2100&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i1 class="fa fa-inr" style="color:#868286"></i1>&nbsp;2500
+            </p2>
+          </div>
+          <div class="block">
+            <img src="https://image.wedmegood.com/resized/450X/uploads/member/101999/1489017815_1475224902_1.jpg">
+            <p>Leonia Holistic Destination&nbsp;&nbsp;&nbsp;&nbsp; <i1 class="fa fa-star"
+                style="color:#ff3399"></i1>&nbsp;4.9 Rating </p>
+            <p1>
+              <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+              &nbsp;Shamirpet,Hyderabad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i1 class="fas fa-university"
+                style="color:#868286"></i1>&nbsp;4 Star and above Hotels
+            </p1>
+            <br>
+            <br>
+            <p1>
+              Veg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Non
+              Veg</p1>
+            <br>
+            <br>
+            <p2>
+              <i1 class="fa fa-inr" style="color:#868286"></i1>
+              &nbsp;1500&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i1 class="fa fa-inr" style="color:#868286"></i1>&nbsp;1500
+            </p2>
+          </div>
+          <div class="block">
+            <img
+              src="https://image.wedmegood.com/resized/450X/uploads/member/111976/1489019672_1478768527_251519781.JPEG">
+            <p>Luminious One Continent Hotel&nbsp;&nbsp;&nbsp;&nbsp;  <i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;5.0
+              </p>
+            <p1>
+              <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+              &nbsp;Abids,Hyderabad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i1 class="fas fa-university"
+                style="color:#868286"></i1>&nbsp;4 Star and above Hotel
+            </p1>
+            <br>
+            <br>
+            <p1>
+              Veg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Non
+              Veg</p1>
+            <br>
+            <br>
+            <p2>
+              <i1 class="fa fa-inr" style="color:#868286"></i1>
+              &nbsp;750&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i1 class="fa fa-inr" style="color:#868286"></i1>&nbsp;900
+            </p2>
+          </div>
+          <div class="block">
+            <img src="https://image.wedmegood.com/resized/450X/uploads/member/31093/1578470173_f4.jpg">
+            <p>Fort Grand&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;5.0 Rating </p>
+            <p1>
+              <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+              &nbsp;Shamshabad,Hyderabad&nbsp;&nbsp;&nbsp;&nbsp;<i1 class="fas fa-university"
+                style="color:#868286"></i1>&nbsp;4 Star and above Hotel
+            </p1>
+            <br>
+            <br>
+            <p1>
+              Veg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Non
+              Veg</p1>
+            <br>
+            <br>
+            <p2>
+              <i1 class="fa fa-inr" style="color:#868286"></i1>
+              &nbsp;1200&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i1 class="fa fa-inr" style="color:#868286"></i1>&nbsp;1350
+            </p2>
+          </div>
+          <div class="block">
+            <img src="https://image.wedmegood.com/resized/450X/uploads/member/2011564/1647583065_1N8A6139.JPG?crop=12,6,2023,1138">
+            <p>Amogham Banquet Hall&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;5.0 Rating </p>
+            <p1>
+              <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+              &nbsp;Hyderabad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<i1 class="fas fa-university"
+                style="color:#868286"></i1>&nbsp;Banquet Halls
+            </p1>
+            <br>
+            <br>
+            <p1>
+              Veg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Non
+              Veg</p1>
+            <br>
+            <br>
+            <p2>
+              <i1 class="fa fa-inr" style="color:#868286"></i1>
+              &nbsp;450&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i1 class="fa fa-inr" style="color:#868286"></i1>&nbsp;595
+            </p2>
+          </div>
+          <div class="block">
+            <img src="https://image.wedmegood.com/resized/450X/uploads/member/738390/1569224015_558006_161430254018468_1436321233_n.jpg">
+            <p>Beach House&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;5.0 Rating </p>
+            <p1>
+              <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+              &nbsp;Madhapur,Hyderabad&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<i1 class="fas fa-university"
+                style="color:#868286"></i1>&nbsp;Banquet Halls,Lawns
+            </p1>
+            <br>
+            <br>
+            <p1>
+              Veg&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Non
+              Veg</p1>
+            <br>
+            <br>
+            <p2>
+              <i1 class="fa fa-inr" style="color:#868286"></i1>
+              &nbsp;650&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i1 class="fa fa-inr" style="color:#868286"></i1>&nbsp;750
+            </p2>
+          </div>
+        </div>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+      </div>
+    </div>
+  </div>
+  <div class="venuespane">
+    <z style="color:black;font-size:35px;margin-left:350px;">Popular Decoration Planners in Hyderabad</z>
+    <div class="wrapper1">
+      <i id="left" class="fa-solid fa-angle-left"></i>
+      <div class="carousel1">
+        <div class="container">
+          <div class="block">
+            <img
+              src="https://image.wedmegood.com/resized/450X/uploads/member/2133662/1678183206_IMG_1294__1_.jpg?crop=15,7,2019,1136"
+              height="300px">
+            <p>Meragi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;4.8 Rating
+            </p>
+            <p1>
+              <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+              &nbsp;Hyderabad
+            </p1>
+            <br>
+            <br>
+            <p1>Starting Price for Decor</p1>
+            <br>
+            <br>
+            <p2>
+              <i1 class="fa fa-inr" style="color:#868286"></i1>
+              &nbsp;40000  onwards
+            </p2>
+          </div>
+          <div class="block">
+            <img
+              src="https://image.wedmegood.com/resized/450X/uploads/member/187658/1679948490_IMG_20221007_144028_878.jpg?crop=284,319,1588,892">
+            <p>Weddings by Tammali&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;5.0 Rating
+            </p>
+            <p1>
+              <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>&nbsp;Kukatpally
+              ,Hyderabad
+            <br>
+            <br>
+            <p1>Starting Price for Decor</p1>
+            <br>
+            <br>
+            <p2>
+              <i1 class="fa fa-inr" style="color:#868286"></i1>
+              &nbsp;40000  onwards
+            </p2>
+          </div>
+          <div class="block">
+            <img
+              src="https://image.wedmegood.com/resized/450X/uploads/member/3920070/1673946795_ATD.png">
+            <p>About The Decor
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;4.9 Rating
+            </p>
+            <p1>
+              <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>&nbsp;Jubilee Hills,Hyderabad
+            </p1>
+            <br>
+            <br>
+            <p1>Starting Price for Decor</p1>
+            <br>
+            <br>
+            <p2>
+              <i1 class="fa fa-inr" style="color:#868286"></i1>
+              &nbsp;1,50,000 - 30,00,000  onwards
+            </p2>
+          </div>
+          <div class="block">
+            <img src="https://image.wedmegood.com/resized/450X/uploads/member/536880/1553512225_6.jpg">
+            <p>Var Vadhu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i1 class="fa fa-star"
+                style="color:#ff3399"></i1>&nbsp;5.0 Rating </p>
+                <p1>
+                  <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>&nbsp;Jubille Hills,Hyderabad
+                </p1>
+                <br>
+                <br>
+                <p1>Starting Price for Decor</p1>
+                <br>
+                <br>
+                <p2>
+                  <i1 class="fa fa-inr" style="color:#868286"></i1>
+                  &nbsp;5,00,000  onwards
+                </p2>
+          </div>
+          <div class="block">
+            <img
+              src="https://image.wedmegood.com/resized/450X/uploads/member/253368/1664883207_photo_6188210827815924305_y.jpg?crop=6,54,1267,713">
+            <p>Gold Feather Weddings&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;4.8
+              Rating </p>
+            <p1>
+              <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+              &nbsp;Ameerpet,Hyderabad
+            </p1>
+            <br>
+            <br>
+            <p1>Starting Price for Decor</p1>
+            <br>
+            <br>
+            <p2>
+              <i1 class="fa fa-inr" style="color:#868286"></i1>
+              &nbsp;4-6 lakhs onwards
+            </p2>
+          </div>
+          <div class="block">
+            <img src="https://image.wedmegood.com/resized/450X/uploads/member/3527278/1668679235_8.JPG?crop=69,14,1154,649">
+            <p>Madhaniya Design Studio&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;5.0 Rating </p>
+            <p1>
+              <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+              &nbsp;Hitech City,Hyderabad
+            </p1>
+            <br>
+            <br>
+            <p1>Starting Price for Decor</p1>
+            <br>
+            <br>
+            <p2>
+              <i1 class="fa fa-inr" style="color:#868286"></i1>
+              &nbsp;1,20,000 onwards
+            </p2>
+          </div>
+          <div class="block">
+            <img src="https://image.wedmegood.com/resized/450X/uploads/member/2750727/1643095802_271737209_3914659392093650_8390592360932486896_n.jpg">
+            <p>4r Together Events&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp; <i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;5.0 Rating </p>
+            <p1>
+              <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+              &nbsp;AS Rao Nagar,Secunderabad
+            </p1>
+            <br>
+            <br>
+            <p1>Starting Price for Decor</p1>
+            <br>
+            <br>
+            <p2>
+              <i1 class="fa fa-inr" style="color:#868286"></i1>
+              &nbsp;30,000 onwards
+            </p2>
+          </div>
+          <div class="block">
+            <img src="https://image.wedmegood.com/resized/450X/uploads/member/3505290/1664784414_Screenshot_2022_10_03_133545.png">
+            <p>Shrusti Elegance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;4.8 Rating </p>
+            <p1>
+              <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+              &nbsp;Hitech City,Hyderabad
+            </p1>
+            <br>
+            <br>
+            <p1>Starting Price for Decor</p1>
+            <br>
+            <br>
+            <p2>
+              <i1 class="fa fa-inr" style="color:#868286"></i1>
+              &nbsp;1,00,000 onwards
+            </p2>
+          </div>
+        </div>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+      </div>
+    </div>
+  </div>
+  <div class="venuespane">
+    <z style="color:black;font-size:35px;margin-left:420px;">Catering Services in Hyderabad</z>
+    <div class="wrapper2">
+      <i id="left" class="fa-solid fa-angle-left"></i>
+      <div class="carousel2">
+        <div class="container">
+          <div class="block">
+            <img
+              src="https://image.wedmegood.com/resized/450X/uploads/vendor_cover_pic/4778/33926f7e-1efd-47a1-b071-e9e594304985.jpg"
+              height="300px">
+            <p>RK Caterers
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;5.0 Rating
+            </p>
+            <p1>
+              <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+              &nbsp;Hyderabad
+            </p1>
+            <br>
+            <br>
+            <p1>Starting Price(Veg Menu)</p1>
+            <br>
+            <br>
+            <p2>
+              <i1 class="fa fa-inr" style="color:#868286"></i1>
+              &nbsp;450 onwards
+            </p2>
+          </div>
+          <div class="block">
+            <img
+              src="https://image.wedmegood.com/resized/450X/uploads/member/1942915/1616408242_IMG_20210318_WA0001.jpg?crop=57,83,967,544">
+            <p>Tasty spread&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;5.0 Rating
+            </p>
+            <p1>
+              <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+              &nbsp;Jubilee Hills, Hyderabad
+            </p1>
+            <br>
+            <br>
+            <p1>Starting Price(Veg Menu)</p1>
+            <br>
+            <br>
+            <p2>
+              <i1 class="fa fa-inr" style="color:#868286"></i1>
+              &nbsp;250 onwards
+            </p2>
+          </div>
+          <div class="block">
+            <img
+              src="https://image.wedmegood.com/resized/450X/uploads/member/19815/1489014721_1442383729_Fast_caterer_016.jpg">
+            <p>Fast Caterers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;4.8 Rating
+            </p>
+            <p1>
+              <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+              &nbsp;Hyderabad
+            </p1>
+            <br>
+            <br>
+            <p1>Starting Price(Veg Menu)</p1>
+            <br>
+            <br>
+            <p2>
+              <i1 class="fa fa-inr" style="color:#868286"></i1>
+              &nbsp;200 onwards
+            </p2>
+          </div>
+          <div class="block">
+            <img src="https://image.wedmegood.com/resized/450X/uploads/member/2361944/1632921038_WhatsApp_Image_2021_09_29_at_6.40.02_PM.jpeg">
+            <p>AV Caterers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i1 class="fa fa-star"
+                style="color:#ff3399"></i1>&nbsp;4.9 Rating </p>
+                <p1>
+                  <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+                  &nbsp;Gachibouli,Hyderabad
+                </p1>
+                <br>
+                <br>
+                <p1>Starting Price(Veg Menu)</p1>
+                <br>
+                <br>
+                <p2>
+                  <i1 class="fa fa-inr" style="color:#868286"></i1>
+                  &nbsp;450 onwards
+                </p2>
+          </div>
+          <div class="block">
+            <img
+              src="https://image.wedmegood.com/resized/450X/uploads/member/4214933/1681819214_Screenshot_137.png">
+            <p>Subham Catering Services&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;5.0
+              Rating </p>
+              <p1>
+                <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+                &nbsp;Gachibouli,Hyderabad
+              </p1>
+              <br>
+              <br>
+              <p1>Starting Price(Veg Menu)</p1>
+              <br>
+              <br>
+              <p2>
+                <i1 class="fa fa-inr" style="color:#868286"></i1>
+                &nbsp;499 onwards
+              </p2>
+          </div>
+          <div class="block">
+            <img src="https://image.wedmegood.com/resized/450X/uploads/member/3313110/1659164262_Annotation_2022_07_30_122246.jpg">
+            <p>Gaurav Caterers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;4.9 Rating </p>
+            <p1>
+              <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+              &nbsp;Hyderabad
+            </p1>
+            <br>
+            <br>
+            <p1>Starting Price(Veg Menu)</p1>
+            <br>
+            <br>
+            <p2>
+              <i1 class="fa fa-inr" style="color:#868286"></i1>
+              &nbsp;2000 onwards
+            </p2>
+          </div>
+          <div class="block">
+              <img src="https://image.wedmegood.com/resized/450X/uploads/member/2683767/1641890576_ChocFrenchBiscuit_Hires.JPG?crop=0,1132,2048,1152">
+              <p>The Cake Room&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;4.9 Rating </p>
+              <p1>
+                <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+                &nbsp;Jubilee Hills,Hyderabad
+              </p1>
+              <br>
+              <br>
+              <p1>Customized Cakes(Veg and Non-Veg)</p1>
+              <br>
+              <br>
+              <p2>
+                <i1 class="fa fa-inr" style="color:#868286"></i1>
+                &nbsp;2600 onwards
+              </p2>
+            </div>
+            <div class="block">
+                <img src="https://image.wedmegood.com/resized/450X/uploads/member/1145527/1585232346_Screenshot_from_2020_03_26_19_47_12.png">
+                <p>Dendi Yashwanth Reddy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;5.0 Rating </p>
+                <p1>
+                  <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+                  &nbsp;Kukatpally,Hyderabad
+                </p1>
+                <br>
+              <br>
+              <p1>General Bartenders</p1>
+                <br>
+                <br>
+                <p2>
+                  <i1 class="fa fa-inr" style="color:#868286"></i1>
+                  &nbsp;8000 onwards
+                </p2>
+              </div>
+
+          </div>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+      </div>
+    </div>
+  </div>
+  <div class="venuespane">
+    <z style="color:black;font-size:35px;margin-left:550px;">Entertainment</z>
+    <div class="wrapper3">
+      <i id="left" class="fa-solid fa-angle-left"></i>
+      <div class="carousel3">
+        <div class="container">
+          <div class="block">
+            <img
+              src="https://image.wedmegood.com/resized/450X/uploads/member/3750041/1669787606_314042403_1806515326389124_2266872060511393504_n.jpg"
+              height="300px">
+            <p>DJ Pradeep Smiley
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;5.0 Rating
+            </p>
+            <p1>
+              <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+              &nbsp;Hyderabad
+            </p1>
+            <br>
+            <br>
+            <p1>Starting Prackage</p1>
+            <br>
+            <br>
+            <p2>
+              <i1 class="fa fa-inr" style="color:#868286"></i1>
+              &nbsp;8000 onwards
+            </p2>
+          </div>
+          <div class="block">
+            <img
+              src="https://image.wedmegood.com/resized/450X/uploads/vendor_cover_pic/45974/e7717d3f-337a-4e7b-b184-2f65665d6459.png">
+            <p>Avaes Shaik Choreography&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
+              <i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;5.0 Rating
+            </p>
+            <p1>
+              <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+              &nbsp;Kondapur, Hyderabad
+            </p1>
+            <br>
+            <br>
+            <p1>10 Songs Package Price</p1>
+            <br>
+            <br>
+            <p2>
+              <i1 class="fa fa-inr" style="color:#868286"></i1>
+              &nbsp;50000 onwards
+            </p2>
+          </div>
+          <div class="block">
+            <img
+              src="https://image.wedmegood.com/resized/450X/uploads/member/3061769/1673758645_B612_20230103_214630_291.jpg?crop=0,0,1280,720">
+            <p>Anchor Krishnaveny&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         
+              <i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;4.9 Rating
+            </p>
+            <p1>
+              <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+              &nbsp;Hyderabad
+            </p1>
+            <br>
+            <br>
+            <p1>Starting Price</p1>
+            <br>
+            <br>
+            <p2>
+              <i1 class="fa fa-inr" style="color:#868286"></i1>
+              &nbsp;200 onwards
+            </p2>
+          </div>
+          <div class="block">
+            <img src="https://image.wedmegood.com/resized/450X/uploads/member/3991566/1675085455_VEN_7537.jpg?crop=0,41,2048,1152">
+            <p>Band Nakshatra&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <i1 class="fa fa-star"
+                style="color:#ff3399"></i1>&nbsp;5.0 Rating </p>
+                <p1>
+                  <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+                  &nbsp;Hyderabad
+                </p1>
+                <br>
+                <br>
+                <p1>Starting Price(Veg Menu)</p1>
+                <br>
+                <br>
+                <p2>
+                  <i1 class="fa fa-inr" style="color:#868286"></i1>
+                  &nbsp;1,30,000 onwards
+                </p2>
+          </div>
+          <div class="block">
+            <img
+              src="https://image.wedmegood.com/resized/450X/uploads/member/66596/1465247454_10606153_688921791177414_5287318858833937208_n.jpg">
+            <p>DJ Amit Saxena&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i1 class="fa fa-star" style="color:#ff3399"></i1>&nbsp;5.0
+              Rating </p>
+              <p1>
+                <i1 class="fas fa-map-marker-alt" style="color:#868286"></i1>
+                &nbsp;Hyderabad
+              </p1>
+              <br>
+              <br>
+              <p1>Starting Package</p1>
+              <br>
+              <br>
+              <p2>
+                <i1 class="fa fa-inr" style="color:#868286"></i1>
+                &nbsp;80,000 onwards
+              </p2>
+          </div>
+          </div>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+      </div>
+    </div>
+  </div>
+  <div class="spacepane"></div>
+  <div class="bottompane"><c style="padding-left:120px;letter-spacing:0px;display:flex;color:white;font-size:40px;">
+    <pre>Book your desired venues,decoration planners
+      and catering services.Click Here</pre></c>
+<a href="booking.php" class="button">&nbsp;Book Now</a>
+</div>
+</body>
+
+</html>
